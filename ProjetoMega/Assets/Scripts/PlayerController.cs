@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
 
 		}
 
-		if ((Input.GetButtonDown ("Slide")) && (grounded == true)) {
+		if ((Input.GetButtonDown ("Slide")) ) {
 			slide = true;
 			timeTemp = 0;
 
