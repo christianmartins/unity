@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
-
+	
 
 
 		Anime.SetBool ("jump", !grounded);
@@ -85,8 +85,11 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
+	//Linha de codigo com bug (deslizar e pular entra na tela de game over);
 	void OnTriggerEnter2D(){
-		n1 += 1;			
-		Debug.Log ("Bateu " + n1);
+		
+		Application.LoadLevel ("GameOver");
+
+
 	}
 }

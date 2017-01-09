@@ -6,10 +6,12 @@ public class SpawnController : MonoBehaviour {
 
 	public GameObject barrierPrefab; // Objeto a ser spawnado
 	public float rateSpwan;	//Intervalo de spwan	
-	public float currentTime; //Tempo decorrido
+	private float currentTime; //Tempo decorrido
 
 	private int position;
 	private float y;
+	public float posA;
+	public float posB;
 
 	void Start () {
 		
